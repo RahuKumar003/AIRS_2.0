@@ -3,13 +3,13 @@
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
+  min-height: 70px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  color: white;
 }
 
 .footer {
@@ -40,7 +40,6 @@
 }
 
 .title {
-  margin: 0;
   line-height: 1.15;
   font-size: 4rem;
 }
@@ -126,4 +125,22 @@
   .logo img {
     filter: invert(1);
   }
+}
+
+.mainnav ul{
+  display: flex; 
+  justify-content: center;
+  margin-top: 50px;
+  color: white;
+}
+
+.mainnav ul li{
+  margin: 0 25px;
+    list-style: none;
+    font-weight: bold;
+}
+
+.projectContent{
+  padding-left:40px;
+  padding-right:40px;
 }
