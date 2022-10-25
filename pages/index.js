@@ -13,7 +13,7 @@ export default function Home() {
 
       
       <main className={styles.main}>
-        <h1 className='bg-red-500'>
+        <h1 className='bg-blue-500'>
            AIRS 2.0
         </h1>
 
