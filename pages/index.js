@@ -23,7 +23,7 @@ export default function Home() {
                 CATEGORY
               </span>
               <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
-                Pinterest DIY dreamcatcher gentrify single-origin coffee
+                ABOUT US
               </h2>
               <p class="leading-relaxed mb-8">
                 Live-edge letterpress cliche, salvia fanny pack humblebrag
@@ -42,7 +42,7 @@ export default function Home() {
                 CATEGORY
               </span>
               <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">
-                Pinterest DIY dreamcatcher gentrify 
+                OUR VISION
               </h2>
               <p class="leading-relaxed mb-8">
                 Live-edge letterpress cliche, salvia fanny pack humblebrag
