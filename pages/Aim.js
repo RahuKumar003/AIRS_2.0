@@ -17,7 +17,7 @@ const Aim = () => {
             <div class="bg-gray-100 p-6 rounded-lg">
               <img
                 class="h-50 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/720x400"
+                src="/brain.jpg"
                 alt="content"
               />
 
@@ -33,7 +33,7 @@ const Aim = () => {
             <div class="bg-gray-100 p-6 rounded-lg">
               <img
                 class="h-50 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/721x401"
+                src="/imagination.jpg"
                 alt="content"
               />
 
@@ -50,7 +50,7 @@ const Aim = () => {
             <div class="bg-gray-100 p-6 rounded-lg">
               <img
                 class="h-50 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/722x402"
+                src="/application.png"
                 alt="content"
               />
 
