@@ -1,17 +1,14 @@
 import '../styles/globals.css'
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
+import Aim from './Aim'
 
 function MyApp({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(false)
   return <>
-  <style jsx global>{`
-  body {
-    background: ${isDark ? "black" : "black"};
-  }
-`}</style>
   <Navbar/>
   <Component {...pageProps} />
+  <Aim/>
   </>
 }
 
