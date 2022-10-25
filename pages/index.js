@@ -16,7 +16,7 @@ export default function Home() {
       </div>
 
       <section class="text-gray-600 body-font overflow-hidden">
-        <div class="container px-5  mx-auto">
+        <div class="container px-10  mx-auto">
           <div class="flex flex-wrap -m-12">
             <div class="p-12 md:w-1/2 flex flex-col items-start">
               <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-black text-xs font-medium tracking-widest">
@@ -53,30 +53,39 @@ export default function Home() {
                 OUR VISION
               </h2>
               <div>
-              <h6 class="leading-relaxed mb-8 text-lg">
-                We AIRS are conducting various lectures, workshops and
-                mentorship programs to help students realize their projects. The
-                mission of the society is to expose students to challenges and
-                new technologies in the field of electronics and thus to nurture
-                and develop their skills set in this arena.
-                <ul className="mt-2">
-                  <li className="mt-2">
-                    1- Aim at bringing out the "technological best" in students
-                  </li>
-                  <li className="mt-2">
-                  2- The chief aim of the club is to bring the students out of their rooms and to expose them to the challenges awaiting them in the field of circuit designing, hardware analysis and programming.
-                  </li>
-                  <li className="mt-2">
-                  3- Aim at providing students with the basic knowledge of electronics but also help them to use the basic concepts to come up with something constructive and useful for the society.
-                  </li>
-                  <li>
-                  4- To conduct lecture series, workshops and also assign projects to students.
-                  </li>
-                  <li className="mt-3">
-                  5-Aim to find hidden talent and to utilize them for teaching learning process.
-                  </li>
-                </ul>
-              </h6>
+                <h6 class="leading-relaxed mb-8 text-lg">
+                  We AIRS are conducting various lectures, workshops and
+                  mentorship programs to help students realize their projects.
+                  The mission of the society is to expose students to challenges
+                  and new technologies in the field of electronics and thus to
+                  nurture and develop their skills set in this arena.
+                  <ul className="mt-2">
+                    <li className="mt-2">
+                      1- Aim at bringing out the "technological best" in
+                      students
+                    </li>
+                    <li className="mt-2">
+                      2- The chief aim of the club is to bring the students out
+                      of their rooms and to expose them to the challenges
+                      awaiting them in the field of circuit designing, hardware
+                      analysis and programming.
+                    </li>
+                    <li className="mt-2">
+                      3- Aim at providing students with the basic knowledge of
+                      electronics but also help them to use the basic concepts
+                      to come up with something constructive and useful for the
+                      society.
+                    </li>
+                    <li>
+                      4- To conduct lecture series, workshops and also assign
+                      projects to students.
+                    </li>
+                    <li className="mt-3">
+                      5-Aim to find hidden talent and to utilize them for
+                      teaching learning process.
+                    </li>
+                  </ul>
+                </h6>
               </div>
               <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
                 <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"></span>
