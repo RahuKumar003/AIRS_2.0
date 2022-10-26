@@ -85,18 +85,17 @@ const Projects = () => {
             {showDetails ? (
               <>
                 <section class="text-gray-600 body-font"  onClick={show}>
-                  <div class="container px-5 py-24 mx-auto">
-                    <div class="flex  -m-4">
+                  <div class="container px-5 py-2 mx-auto">
+                    <div class="flex-wrap flex  m-4">
                       {data.map((item,key) => {
                         return (
-                        <div class="lg:w-1/3 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2">
+                        <div class="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2">
                             <a class="block relative rounded overflow-hidden">
                               <img
                                 alt="ecommerce"
-                                class="m-auto md:mx-0 h-[30vh] md:h-[36vh] block w-full"
+                                className=" inset-0  object-cover object-center"
                                 src={item.img}
-                                
-                                
+                              
                               />
                             </a>
                             <div class="mt-4 text-center md:text-left">
@@ -119,10 +118,10 @@ const Projects = () => {
                         <>
                 <section class="text-gray-600 body-font" onClick={show}>
                   <div class="container px-5 py-24 mx-auto">
-                    <div class="flex  -m-4">
+                    <div class="flex flex-wrap  -m-4">
                       {data.map((item,key) => {
                         return (
-                        <div class="lg:w-1/3 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2">
+                        <div class="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2">
                             <div class="mt-4 text-center md:text-left">
                               <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
                                 PROJECT {key+1}
