@@ -16,6 +16,7 @@ const Navbar = () => {
       <a class="mr-5 hover:text-yellow-400">HOME</a>
       <a class="mr-5 hover:text-yellow-400">PROJECTS</a>
       <a class="mr-5 hover:text-yellow-400">OUR TEAM</a>
+      <a class="mr-5 hover:text-yellow-400">JOIN US</a>
      
     </nav>
    
