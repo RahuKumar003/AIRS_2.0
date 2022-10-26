@@ -6,10 +6,10 @@ const Aim = () => {
       <div class="container px-5 py-2 mx-auto">
         <div class="flex flex-wrap w-full mb-20">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 mx-5">
               OUR AIM
             </h1>
-            <div class="h-1 w-20 bg-black rounded"></div>
+            <div class="h-1 w-20 bg-black rounded mx-5"></div>
           </div>
         </div>
         <div class="flex flex-wrap -m-4">
