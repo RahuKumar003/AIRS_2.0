@@ -87,7 +87,7 @@ const Projects = () => {
                 <section class="text-gray-600 body-font"  onClick={show}>
                   <div class="container px-5 py-24 mx-auto">
                     <div class="flex  -m-4">
-                      {data.map((item) => {
+                      {data.map((item,key) => {
                         return (
                         <div class="lg:w-1/3 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2">
                             <a class="block relative rounded overflow-hidden">
@@ -101,11 +101,12 @@ const Projects = () => {
                             </a>
                             <div class="mt-4 text-center md:text-left">
                               <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                                PROJECTS
+                                PROJECT {key+1}
                               </h3>
                               <h2 class="text-gray-900 title-font text-lg font-medium">
                                 {item.heading}
                               </h2>
+                              <a className="font-light text-blue-500">Read Project Description</a>
                             </div>
                           </div>
                         );
@@ -119,12 +120,12 @@ const Projects = () => {
                 <section class="text-gray-600 body-font" onClick={show}>
                   <div class="container px-5 py-24 mx-auto">
                     <div class="flex  -m-4">
-                      {data.map((item) => {
+                      {data.map((item,key) => {
                         return (
                         <div class="lg:w-1/3 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2">
                             <div class="mt-4 text-center md:text-left">
                               <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
-                                PROJECTS
+                                PROJECT {key+1}
                               </h3>
                               <h2 class="text-gray-900 title-font text-lg font-medium">
                                 {item.heading}
@@ -134,7 +135,9 @@ const Projects = () => {
                             
                               <p className="title-font text-lg mt-10">
                               {item.p2}
+                              
                               </p>
+                              <a className="font-light mb-10 text-blue-500">Back</a>
                             </div>
                           </div>
                         );
