@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import { useState } from 'react'
 import Navbar from '../components/Navbar'
 import Aim from './Aim'
+import Projects from './Projects'
 
 function MyApp({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(false)
@@ -9,6 +10,7 @@ function MyApp({ Component, pageProps }) {
   <Navbar/>
   <Component {...pageProps} />
   <Aim/>
+  <Projects/>
   </>
 }
 
