@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 const Aim = () => {
   return (
     <section class="text-gray-600 body-font">
@@ -14,10 +14,10 @@ const Aim = () => {
         </div>
         <div class="flex flex-wrap -m-4">
           <div class="xl:w-1/3  md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-gray-50 p-6 rounded-lg">
               <img
-                class="h-50 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/720x400"
+                class="h-20 object-contain rounded w-full   mb-3"
+                src="/brain.jpg"
                 alt="content"
               />
 
@@ -30,10 +30,10 @@ const Aim = () => {
             </div>
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-gray-50 p-6 rounded-lg">
               <img
-                class="h-50 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/721x401"
+                class="h-20 object-contain rounded w-full   mb-3"
+                src="/imagination.jpg"
                 alt="content"
               />
 
@@ -47,10 +47,10 @@ const Aim = () => {
             </div>
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4">
-            <div class="bg-gray-100 p-6 rounded-lg">
+            <div class="bg-gray-50 p-6 rounded-lg">
               <img
-                class="h-50 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/722x402"
+                class="h-20 object-contain rounded w-full   mb-3"
+                src="/application.png"
                 alt="content"
               />
 
