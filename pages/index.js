@@ -1,19 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
+import styles from "../styles/Home.module.css"
+
 export default function Home() {
   return (
-    <section class="text-gray-600 body-font">
-      <div class="container px-5 py-10 mx-auto flex flex-col">
-        <div class="lg:w-4/6 mx-auto">
-          <div class="rounded-lg h-64 overflow-hidden">
-            <img
-              alt="content"
-              class="object-cover object-center h-full w-full"
-              src="https://dummyimage.com/1200x500"
-            />
-          </div>
-        </div>
-      </div>
+    <div className={styles.container}>
+      <Head>
+        <title>AIRS 2.0</title>
+        <meta name="description" content="Artificial Intelligence & Robotics Society" />
+        <link rel="icon" href="/airslogo.png" />
+      </Head>
 
       <section class="text-gray-600 body-font overflow-hidden">
         <div class="container px-10  mx-auto">
@@ -95,6 +91,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </section>
+    </div>
   );
 }
