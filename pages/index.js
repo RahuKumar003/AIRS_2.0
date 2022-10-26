@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/airs.png" />
       </Head>
 
-      <section class="text-gray-600 body-font overflow-hidden">
+      <section class="text-gray-600 body-font overflow-hidden mt-5">
         <div class="container px-10  mx-auto">
           <div class="flex flex-wrap -m-12">
             <div class="p-12 md:w-1/2 flex flex-col items-start">
