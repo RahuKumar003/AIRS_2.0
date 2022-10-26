@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>AIRS 2.0</title>
         <meta name="description" content="Artificial Intelligence & Robotics Society" />
-        <link rel="icon" href="/airslogo.png" />
+        <link rel="icon" href="/airs.png" />
       </Head>
 
       <section class="text-gray-600 body-font overflow-hidden">
