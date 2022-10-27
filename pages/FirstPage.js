@@ -22,6 +22,7 @@ const FirstPage = () => {
       <div className='flex right-0 top-2 object-center mx-5'>
       <button class="flex top-2 right-0  text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-md text-lg">Join Us<FaInstagram className='mx-5 text-3xl'/></button>
       </div>
+      
        
       </div>
     </div>
