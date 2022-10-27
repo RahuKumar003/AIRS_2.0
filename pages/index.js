@@ -21,7 +21,7 @@ export default function Home() {
               <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4">
                 ABOUT US
               </h2>
-              <p class="leading-relaxed mb-8  text-lg">
+              <p class="leading-relaxed mb-8  text-lg bg-yellow-100 rounded">
                 Innovation, Imagination and Application is the motto of this
                 society. AIRS aims to teach and help students to understand the
                 seemingly incomprehensible software development and electronic
@@ -49,7 +49,7 @@ export default function Home() {
                 OUR VISION
               </h2>
               <div>
-                <h6 class="leading-relaxed mb-8 text-lg">
+                <h6 class="leading-relaxed mb-8 text-lg bg-pink-100 rounded">
                   We AIRS are conducting various lectures, workshops and
                   mentorship programs to help students realize their projects.
                   The mission of the society is to expose students to challenges
