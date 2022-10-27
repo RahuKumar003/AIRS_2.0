@@ -18,10 +18,10 @@ export default function Home() {
               <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-black text-xs font-medium tracking-widest">
                 AIRS
               </span>
-              <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4">
+              <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4 bg-yellow-200">
                 ABOUT US
               </h2>
-              <p class="leading-relaxed mb-8  text-lg bg-yellow-100 rounded">
+              <p class="leading-relaxed mb-8  text-lg ">
                 Innovation, Imagination and Application is the motto of this
                 society. AIRS aims to teach and help students to understand the
                 seemingly incomprehensible software development and electronic
@@ -45,11 +45,11 @@ export default function Home() {
               <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-black text-xs font-medium tracking-widest">
                 AIRS
               </span>
-              <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4">
+              <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4 bg-blue-300 ">
                 OUR VISION
               </h2>
               <div>
-                <h6 class="leading-relaxed mb-8 text-lg bg-pink-100 rounded">
+                <h6 class="leading-relaxed mb-8 text-lg ">
                   We AIRS are conducting various lectures, workshops and
                   mentorship programs to help students realize their projects.
                   The mission of the society is to expose students to challenges
@@ -66,7 +66,7 @@ export default function Home() {
                       awaiting them in the field of circuit designing, hardware
                       analysis and programming.
                     </li>
-                    <li className="mt-2">
+                    <li className="mt-2 bg-yellow-200">
                       3- Aim at providing students with the basic knowledge of
                       electronics but also help them to use the basic concepts
                       to come up with something constructive and useful for the

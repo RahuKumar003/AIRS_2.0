@@ -55,7 +55,7 @@ const Projects = () => {
       <div class="container px-5 py-2 mx-auto bg-gradient-to-r from- to-blue-500">
         <div class="flex flex-wrap w-full mb-20">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 class=" sm:text-3xl text-2xl font-sans title-font mb-2 text-gray-900 mx-5 mt-10 ">
+            <h1 class=" sm:text-3xl text-2xl font-sans title-font mb-2 text-gray-900 mx-5 mt-10  ">
               OUR PROJECTS
             </h1>
             <div class="h-1 w-20 bg-black rounded mx-5"></div>
@@ -74,14 +74,14 @@ const Projects = () => {
               projects in different domains. By this we aim to make
               transformation of Theoretical Knowledge into its applications.
             </p>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left mb-10 bg-blue-100 rounded ">
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left mb-10 ">
               Project work gives engineering solutions to the outcome of
               existing systems.We are trying to select projects that are related
               to the society oriented applications like heartbeat detector, LPG
               gas leakage detector and many more.
             </p>
 
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left bg-green-100 rounded">
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left bg-blue-100 rounded">
               Project work enables one to conduct oneself in a professional
               manner by analyzing, managing, evaluating the project related
               matters. Project implementation always makes use of the latest and
@@ -110,7 +110,7 @@ const Projects = () => {
                           />
                         </a>
                         <div class="mt-4 text-center md:text-left">
-                          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                          <h3 class="text-gray-500 text-xs  title-font mb-1">
                             PROJECTS {keys + 1}
                           </h3>
                           <h2 class="text-gray-900 title-font text-lg font-sans mt-2">
