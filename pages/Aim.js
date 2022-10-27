@@ -14,7 +14,7 @@ const Aim = () => {
         </div>
         <div class="flex flex-wrap -m-4">
           <div class="xl:w-1/3  md:w-1/2 p-4">
-            <div class="bg-gray-50 p-6 rounded-lg">
+            <div class="p-6 rounded-lg bg-blue-300 h-full">
               <img
                 class="h-20 object-contain rounded w-full   mb-3"
                 src="/brain.jpg"
@@ -24,13 +24,13 @@ const Aim = () => {
               <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
                 IMAGINATION
               </h2>
-              <p class="leading-relaxed text-base">
+              <p class="text-lg  text-gray-900 ">
                 Lets animate and be the change to see the world.
               </p>
             </div>
           </div>
-          <div class="xl:w-1/3 md:w-1/2 p-4">
-            <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="xl:w-1/3 md:w-1/2 p-4 h-full">
+            <div class="bg-green-100 p-6 rounded-lg">
               <img
                 class="h-20 object-contain rounded w-full   mb-3"
                 src="/imagination.jpg"
@@ -40,14 +40,14 @@ const Aim = () => {
               <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
                 IDEAS
               </h2>
-              <p class="leading-relaxed text-base">
+              <p class="text-lg  text-gray-900 ">
                 Knowledge is power. Information is liberating. Education is the
                 premise of progress, in every society, in every family.
               </p>
             </div>
           </div>
-          <div class="xl:w-1/3 md:w-1/2 p-4">
-            <div class="bg-gray-50 p-6 rounded-lg">
+          <div class="xl:w-1/3 md:w-1/2 p-4 ">
+            <div class="bg-yellow-100 p-6 rounded-lg h-full">
               <img
                 class="h-20 object-contain rounded w-full   mb-3"
                 src="/application.png"
