@@ -23,7 +23,7 @@ const data = [
     heading: " METEOR SHOWER GAME",
     p1: "Prototype for meteor retro style game in which we have to save our ship from meteor",
     p2: "The project we made is having following components in it as matrix led 8x8, push button, resistor and Arduino Nano microcontroller. ",
-    backgroundColor: "bg-yellow-100",
+    backgroundColor: "bg-yellow-50",
   },
   {
     img: "/projects/tribotversion.jpg",
@@ -55,7 +55,7 @@ const Projects = () => {
       <div class="container px-5 py-2 mx-auto">
         <div class="flex flex-wrap w-full mb-20">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 mx-5">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mt-5 text-gray-900 mx-5">
               OUR PROJECTS
             </h1>
             <div class="h-1 w-20 bg-black rounded mx-5"></div>
@@ -90,10 +90,74 @@ const Projects = () => {
               colleague.
             </p>
           </div>
-
-          
         </div>
       </section>
+
+      <div>
+        {showDetails ? (
+          <>
+            <section class="text-gray-600 body-font" onClick={show}>
+              <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                  {data.map((item, keys) => {
+                    return (
+                      <div class="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2">
+                        <a class="block relative rounded overflow-hidden">
+                          <img
+                            alt="ecommerce"
+                            class="inset-0 w-full h-full object-cover object-center"
+                            src={item.img}
+                          />
+                        </a>
+                        <div class="mt-4 text-center md:text-left">
+                          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                            PROJECTS {keys + 1}
+                          </h3>
+                          <h2 class="text-gray-900 title-font text-lg font-sans mt-2">
+                            {item.heading}
+                          </h2>
+                          <h2 class=" text-gray-900 title-font text-lg mt-4 font-sans">
+                            {item.p1}
+                          </h2>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </section>
+          </>
+        ) : (
+          <>
+          <section class="text-gray-600 body-font mx-5" onClick={show}>
+              <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                  {data.map((item, keys) => {
+                    return (
+                      <div class={`lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2 ${item.backgroundColor }`} >
+                        <a class="block relative rounded overflow-hidden">
+                          
+                        </a>
+                        <div class="mt-4 text-center md:text-left">
+                          <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">
+                            PROJECTS {keys + 1}
+                          </h3>
+                          <h2 class="text-gray-900 title-font text-lg font-sans mt-2">
+                            {item.heading}
+                          </h2>
+                          <h2 class="text-gray-900 title-font text-lg mt-4 font-sans">
+                            {item.p2}
+                          </h2>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </section>
+          </>
+        )}
+      </div>
     </>
   );
 };

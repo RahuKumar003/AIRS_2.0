@@ -6,7 +6,7 @@ const Aim = () => {
       <div class="container px-5 py-2 mx-auto">
         <div class="flex flex-wrap w-full mb-20">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900 mx-5">
+            <h1 class="sm:text-3xl text-2xl font-sans title-font mb-2 text-gray-900 mx-5">
               OUR AIM
             </h1>
             <div class="h-1 w-20 bg-black rounded mx-5"></div>
@@ -24,7 +24,7 @@ const Aim = () => {
               <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
                 IMAGINATION
               </h2>
-              <p class="text-lg  text-gray-900 ">
+              <p class="text-gray-900 title-font text-lg mt-4 font-sans ">
                 Lets animate and be the change to see the world.
               </p>
             </div>
@@ -40,7 +40,7 @@ const Aim = () => {
               <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
                 IDEAS
               </h2>
-              <p class="text-lg  text-gray-900 ">
+              <p class="text-gray-900 title-font text-lg mt-4 font-sans ">
                 Knowledge is power. Information is liberating. Education is the
                 premise of progress, in every society, in every family.
               </p>
@@ -57,7 +57,7 @@ const Aim = () => {
               <h2 class="text-lg text-gray-900 font-medium title-font mb-4">
                 APPLICATION
               </h2>
-              <p class="leading-relaxed text-base">
+              <p className="text-gray-900 title-font text-lg mt-4 font-sans">
                 Apply the thing, and be yourself to develop the project in your
                 real life.
               </p>
