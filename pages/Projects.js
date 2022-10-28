@@ -9,7 +9,7 @@ const data = [
     heading: "MCU BOARD",
     p1: "Prototype for the MCU board is now been completed with the help of Atmega328P. It is having an on board motor controlling unit, LED segment, Buzzer as well as push button.",
     p2: "It also has some of the important communication protocols like SPI, I2C, USART as well as ADC for communicating with the real world. In addition, there is one thing more that is power supply unit. It can be used in the control and automation field. It is being programmed by means of USB to TTL logic.",
-    backgroundColor: "bg-gradient-to-r from-indigo-100 to-purple-400",
+    backgroundColor: "bg-gray-200",
   },
   {
     img: "/projects/radar.jpg",
@@ -66,7 +66,7 @@ const Projects = () => {
       <section class="text-gray-600 body-font">
         <div class="container px-5  mx-auto">
           <div class="p-12 flex flex-col text-center w-full mb-10">
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left mb-10 bg-red-100  rounded">
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left mb-10 bg-gray-200 rounded p-2">
               The far reaching technical advancements and career options in the
               industry always need knowledgeable, technically sound, creative
               and amazingly quick problem solving skilled engineers. Therefore,
@@ -74,14 +74,14 @@ const Projects = () => {
               projects in different domains. By this we aim to make
               transformation of Theoretical Knowledge into its applications.
             </p>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left mb-10 ">
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left mb-10  ">
               Project work gives engineering solutions to the outcome of
               existing systems.We are trying to select projects that are related
               to the society oriented applications like heartbeat detector, LPG
               gas leakage detector and many more.
             </p>
 
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left bg-blue-100 rounded">
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left bg-gray-200 rounded p-2">
               Project work enables one to conduct oneself in a professional
               manner by analyzing, managing, evaluating the project related
               matters. Project implementation always makes use of the latest and
