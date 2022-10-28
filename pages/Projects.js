@@ -53,7 +53,7 @@ const Projects = () => {
   return (
     <>
       <div class="container px-5 py-2 mx-auto bg-gradient-to-r from- to-blue-500">
-        <div class="flex flex-wrap w-full mb-20">
+        <div class="flex flex-wrap w-full mb-5">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
             <h1 class=" sm:text-3xl text-2xl font-sans title-font mb-2 text-gray-900 mx-5 mt-10  ">
               OUR PROJECTS
@@ -101,7 +101,7 @@ const Projects = () => {
                 <div class="flex flex-wrap -m-4">
                   {data.map((item, keys) => {
                     return (
-                      <div class="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2">
+                      <div class="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg mx-8">
                         <a class="block relative rounded overflow-hidden">
                           <img
                             alt="ecommerce"
@@ -110,7 +110,7 @@ const Projects = () => {
                           />
                         </a>
                         <div class="mt-4 text-center md:text-left">
-                          <h3 class="text-gray-500 text-xs  title-font mb-1">
+                          <h3 class="text-red-500 text-md  title-font mb-1">
                             PROJECTS {keys + 1}
                           </h3>
                           <h2 class="text-gray-900 title-font text-lg font-sans mt-2">
