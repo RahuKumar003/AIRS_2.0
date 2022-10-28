@@ -40,7 +40,7 @@ const OurTeam = () => {
             <div class="flex flex-wrap -m-4">
               {data.map((item, keys) => {
                 return (
-                  <div class="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2 mx-8">
+                  <div class="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2 mx-8 bg-gray-100">
                     <img
                       alt="team"
                       class="flex-shrink-0 rounded-lg  object-cover object-center sm:mb-0 mb-4"
