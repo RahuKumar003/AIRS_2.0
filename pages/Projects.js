@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import Link from "next/link";
-import styles from "../styles/Home.module.css";
 const data = [
   {
     img: "/projects/mcuBoard.jpg",
@@ -40,6 +38,21 @@ const data = [
     backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
   },
 ];
+
+const desc =[
+  {
+    content:"The far reaching technical advancements and career options in the industry always need knowledgeable, technically sound, creative and amazingly quick problem solving skilled engineers. Therefore, focusing of this aspects we are trying everyday to make innovative projects in different domains. By this we aim to make transformation of Theoretical Knowledge into its applications.",
+    className:"lg:w-2/3 mx-auto leading-relaxed text-xl text-left mb-10 bg-gray-200 rounded p-2"
+  },
+  { content:"Project work gives engineering solutions to the outcome of existing systems.We are trying to select projects that are related to the society oriented applications like heartbeat detector, LPG gas leakage detector and many more.",
+  className : "lg:w-2/3 mx-auto leading-relaxed text-xl text-left mb-10"
+  },
+  {
+    content : "Project work enables one to conduct oneself in a professionalmanner by analyzing, managing, evaluating the project relatedmatters. Project implementation always makes use of the latest andmore advanced technologies for controlling equipments and devices.Therefore, we believe in learning as well as teaching our fellowcolleague.",
+    className : "lg:w-2/3 mx-auto leading-relaxed text-xl text-left bg-gray-200 rounded p-2"
+  }
+
+]
 const Projects = () => {
   const [showDetails, setShowDetails] = useState(true);
   const show = () => {
@@ -66,29 +79,18 @@ const Projects = () => {
       <section class="text-gray-600 body-font">
         <div class="container px-5  mx-auto">
           <div class="p-12 flex flex-col text-center w-full mb-10">
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left mb-10 bg-gray-200 rounded p-2">
-              The far reaching technical advancements and career options in the
-              industry always need knowledgeable, technically sound, creative
-              and amazingly quick problem solving skilled engineers. Therefore,
-              focusing of this aspects we are trying everyday to make innovative
-              projects in different domains. By this we aim to make
-              transformation of Theoretical Knowledge into its applications.
-            </p>
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left mb-10  ">
-              Project work gives engineering solutions to the outcome of
-              existing systems.We are trying to select projects that are related
-              to the society oriented applications like heartbeat detector, LPG
-              gas leakage detector and many more.
-            </p>
 
-            <p class="lg:w-2/3 mx-auto leading-relaxed text-xl text-left bg-gray-200 rounded p-2">
-              Project work enables one to conduct oneself in a professional
-              manner by analyzing, managing, evaluating the project related
-              matters. Project implementation always makes use of the latest and
-              more advanced technologies for controlling equipments and devices.
-              Therefore, we believe in learning as well as teaching our fellow
-              colleague.
-            </p>
+          <div>
+            {desc.map((item)=>{
+              return(
+                <>
+                  <p className={item.className}>{item.content}</p>
+                </>
+              )
+            })}
+          </div>
+            
+           
           </div>
         </div>
       </section>
@@ -101,7 +103,7 @@ const Projects = () => {
                 <div class="flex flex-wrap -m-4">
                   {data.map((item, keys) => {
                     return (
-                      <div class="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg mx-8">
+                      <div class="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 bg-gray-100">
                         <a class="block relative rounded overflow-hidden">
                           <img
                             alt="ecommerce"
@@ -134,7 +136,7 @@ const Projects = () => {
                 <div class="flex flex-wrap -m-4">
                   {data.map((item, keys) => {
                     return (
-                      <div class={`lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg m-2 ${item.backgroundColor}`}  >
+                      <div class={`lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 ${item.backgroundColor}`}  >
                         <a class="block relative rounded overflow-hidden">
                           
                         </a>
