@@ -21,6 +21,7 @@ export default function Home() {
               <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4 bg-yellow-200">
                 ABOUT US
               </h2>
+              <div className="bg-gray-200 rounded-lg p-2">
               <p class="leading-relaxed mb-8  text-lg ">
                 Innovation, Imagination and Application is the motto of this
                 society. AIRS aims to teach and help students to understand the
@@ -35,6 +36,7 @@ export default function Home() {
                 has been said “Technology is best when it brings people together
                 and make the world much better.”
               </p>
+              </div>
               <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
                 <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"></span>
                 <span class="text-gray-400 inline-flex items-center leading-none text-sm"></span>
@@ -48,7 +50,7 @@ export default function Home() {
               <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4 bg-blue-300 ">
                 OUR VISION
               </h2>
-              <div>
+              <div className="bg-gray-200 rounded-lg p-2">
                 <h6 class="leading-relaxed mb-8 text-lg ">
                   We AIRS are conducting various lectures, workshops and
                   mentorship programs to help students realize their projects.
@@ -66,7 +68,7 @@ export default function Home() {
                       awaiting them in the field of circuit designing, hardware
                       analysis and programming.
                     </li>
-                    <li className="mt-2 bg-yellow-200">
+                    <li className="mt-2">
                       3- Aim at providing students with the basic knowledge of
                       electronics but also help them to use the basic concepts
                       to come up with something constructive and useful for the
