@@ -103,7 +103,7 @@ const Projects = () => {
                 <div class="flex flex-wrap -m-4">
                   {data.map((item, keys) => {
                     return (
-                      <div class="lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 bg-gray-100">
+                      <div class="lg:w-1/5 md:w-1/3 lg:mx-5 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 bg-gray-200 rounded-lg">
                         <a class="block relative rounded overflow-hidden">
                           <img
                             alt="ecommerce"
@@ -136,7 +136,7 @@ const Projects = () => {
                 <div class="flex flex-wrap -m-4">
                   {data.map((item, keys) => {
                     return (
-                      <div class={`lg:w-1/5 md:w-1/2 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 ${item.backgroundColor}`}  >
+                      <div class={`lg:w-1/5 md:w-1/3 lg:mx-5 p-4 w-full cursor-pointer shadow-lg rounded-lg mx-8 mb-5 ${item.backgroundColor}`}  >
                         <a class="block relative rounded overflow-hidden">
                           
                         </a>
