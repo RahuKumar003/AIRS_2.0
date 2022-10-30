@@ -21,7 +21,7 @@ export default function Home() {
               <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4 bg-yellow-200 p-2 rounded-lg">
                 ABOUT US
               </h2>
-              <div className="bg-gray-200 rounded-lg p-2">
+              <div className="bg-gray-200 rounded-lg p-4">
               <p class="leading-relaxed mb-8  text-lg ">
                 Innovation, Imagination and Application is the motto of this
                 society. AIRS aims to teach and help students to understand the
