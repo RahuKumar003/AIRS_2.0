@@ -11,17 +11,18 @@ export default function Home() {
         <link rel="icon" href="/airs.png" />
       </Head>
 
-      <section class="text-gray-600 body-font overflow-hidden">
+      <section class="text-gray-600 body-font overflow-hidden mt-5">
         <div class="container px-10  mx-auto">
           <div class="flex flex-wrap -m-12">
             <div class="p-12 md:w-1/2 flex flex-col items-start">
-              <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-black text-xs font-medium tracking-widest">
+              <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-black text-xs font-medium tracking-widest ">
                 AIRS
               </span>
-              <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4">
+              <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4 bg-yellow-200 p-2 rounded-lg">
                 ABOUT US
               </h2>
-              <p class="leading-relaxed mb-8  text-lg">
+              <div className="bg-gray-200 rounded-lg p-4">
+              <p class="leading-relaxed mb-8  text-lg ">
                 Innovation, Imagination and Application is the motto of this
                 society. AIRS aims to teach and help students to understand the
                 seemingly incomprehensible software development and electronic
@@ -35,6 +36,7 @@ export default function Home() {
                 has been said “Technology is best when it brings people together
                 and make the world much better.”
               </p>
+              </div>
               <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
                 <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"></span>
                 <span class="text-gray-400 inline-flex items-center leading-none text-sm"></span>
@@ -45,11 +47,11 @@ export default function Home() {
               <span class="inline-block py-1 px-2 rounded bg-indigo-50 text-black text-xs font-medium tracking-widest">
                 AIRS
               </span>
-              <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4">
+              <h2 class="sm:text-xl text-xl title-font font-medium text-gray-900 mt-4 mb-4 bg-blue-300 p-2 rounded-lg ">
                 OUR VISION
               </h2>
-              <div>
-                <h6 class="leading-relaxed mb-8 text-lg">
+              <div className="bg-gray-200 rounded-lg p-2">
+                <h6 class="leading-relaxed mb-8 text-lg ">
                   We AIRS are conducting various lectures, workshops and
                   mentorship programs to help students realize their projects.
                   The mission of the society is to expose students to challenges
