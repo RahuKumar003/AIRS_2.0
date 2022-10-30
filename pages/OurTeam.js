@@ -35,7 +35,7 @@ const OurTeam = () => {
         </div>
       </div>
       <div>
-        <section class="text-gray-600 body-font mx-10">
+        <section class="text-gray-600 body-font mx-10 mb-10">
           <div class="container px-5 mt-10 mx-auto">
             <div class="flex flex-wrap -m-4">
               {data.map((item, keys) => {

@@ -5,6 +5,7 @@ import Aim from './Aim'
 import Projects from './Projects'
 import FirstPage from './FirstPage'
 import OurTeam from './OurTeam'
+import Footer from './Footer'
 
 function MyApp({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(false)
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }) {
   <Aim/>
   <Projects/>
   <OurTeam/>
+  <Footer/>
   </>
 }
 
