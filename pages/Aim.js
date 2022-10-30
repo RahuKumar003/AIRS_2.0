@@ -16,7 +16,7 @@ const Aim = () => {
       </div>
         <div class="flex flex-wrap -m-4">
           <div class="xl:w-1/3  md:w-1/2 p-4">
-            <div class="p-6 rounded-lg bg-blue-300 h-full">
+            <div class="p-6 rounded-lg bg-blue-300 h-full w-full">
               <img
                 class="h-20 object-contain rounded w-full   mb-3"
                 src="/brain.jpg"
@@ -31,7 +31,7 @@ const Aim = () => {
               </p>
             </div>
           </div>
-          <div class="xl:w-1/3 md:w-1/2 p-4 h-full">
+          <div class="xl:w-1/3 md:w-1/2 p-4 h-full w-full">
             <div class="bg-green-100 p-6 rounded-lg">
               <img
                 class="h-20 object-contain rounded w-full   mb-3"
@@ -49,7 +49,7 @@ const Aim = () => {
             </div>
           </div>
           <div class="xl:w-1/3 md:w-1/2 p-4 ">
-            <div class="bg-yellow-100 p-6 rounded-lg h-full">
+            <div class="bg-yellow-100 p-6 rounded-lg h-full w-full">
               <img
                 class="h-20 object-contain rounded w-full   mb-3"
                 src="/application.png"

@@ -2,7 +2,7 @@ import React from "react";
 const data = [
   {
     name: "PROF M AFSAR ALAM",
-    position: "Head And Dean Of Department Of Engineering",
+    position: "HOD",
     img: "http://www.jamiahamdard.ac.in/airs/img/team/afsar.jpg",
   },
   {
@@ -44,12 +44,12 @@ const Team = () => {
             </h1>
             <div class="h-1 w-20 bg-black rounded mx-5"></div>
           </div>
-          <div class="flex flex-wrap -m-4 mx-5 mt-5">
+          <div class="flex flex-wrap -m-4  mt-5">
           {data.map((item)=>{
             return(
                 <>
-                <div class="p-4 lg:w-1/2">
-              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <div class="p-4 lg:w-1/2 ">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left mx-10 bg-gray-200 rounded-lg w-full ">
                 <img
                   alt="team"
                   class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
