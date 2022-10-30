@@ -1,26 +1,38 @@
 import React from "react";
 const data = [
-    {
-      name: "PROF M AFSAR ALAM",
-      position: "Head And Dean Of Department Of Engineering",
-      img: "http://www.jamiahamdard.ac.in/airs/img/team/afsar.jpg",
-    },
-    {
-      name: "PROF RANJIT BISWAS",
-      position: "CHIEF ADVISOR",
-      img: "http://www.jamiahamdard.ac.in/airs/img/team/ranjit.jpg",
-    },
-    {
-      name: "MD OMAIR AHMAD",
-      position: "Assistant Professor",
-      img: "http://www.jamiahamdard.ac.in/airs/img/team/omair.jpg",
-    },
-    {
-      name: "NAVED ALAM",
-      position: "Assistant Professor",
-      img: "http://www.jamiahamdard.ac.in/airs/img/team/naved1.jpg",
-    },
-  ];
+  {
+    name: "PROF M AFSAR ALAM",
+    position: "Head And Dean Of Department Of Engineering",
+    img: "http://www.jamiahamdard.ac.in/airs/img/team/afsar.jpg",
+  },
+  {
+    name: "PROF RANJIT BISWAS",
+    position: "CHIEF ADVISOR",
+    img: "http://www.jamiahamdard.ac.in/airs/img/team/ranjit.jpg",
+  },
+  {
+    name: "MD OMAIR AHMAD",
+    position: "Assistant Professor",
+    img: "http://www.jamiahamdard.ac.in/airs/img/team/omair.jpg",
+  },
+  
+  {
+    name: "NAVED ALAM",
+    position: "Assistant Professor",
+    img: "http://www.jamiahamdard.ac.in/airs/img/team/naved1.jpg",
+  },
+  {
+    name: "ADIL REHMAN",
+    position: "President",
+    img: "http://www.jamiahamdard.ac.in/airs/img/team/adil.jpg",
+  },
+  {
+    name: "SAURAV KUMAR",
+    position: "Vice-President",
+    img: "http://www.jamiahamdard.ac.in/airs/img/team/saurav.jpg",
+  },
+  
+];
 const Team = () => {
   return (
     <div>
