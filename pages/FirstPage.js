@@ -2,9 +2,36 @@ import React from 'react'
 import Image from 'next/image'
 import {BsFacebook} from 'react-icons/bs'
 import {FaInstagram} from 'react-icons/fa'
+import {toast , ToastContainer} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 const FirstPage = () => {
+  const showToast=()=>{
+    toast.success("Welcome TO AIRS",{
+      toastId : "abx",
+      position : "bottom-left",
+      autoClose : 5000,
+      hideProgressBar : false,
+      closeOnClick : true,
+      pauseOnHover : true,
+      draggable : true,
+      progress : undefined
+    })
+  }
+
+  showToast()
+  
   return (
     <div>
+    <ToastContainer
+    position="bottom-left"
+    autoClose = {5000}
+    hideProgressBar = {false}
+    newestOnTop = {false}
+    closeOnClick
+    rtl = {false}
+    pauseOnFocusLoss
+    draggable
+    pauseOnHover/>
         <section class="text-gray-600 body-font">
   <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
   <div class="rounded-lg h-64 overflow-hidden mb-10 ">
