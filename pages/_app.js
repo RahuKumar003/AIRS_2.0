@@ -6,6 +6,7 @@ import Projects from './Projects'
 import FirstPage from './FirstPage'
 import OurTeam from './OurTeam'
 import Footer from './Footer'
+import Team from './Team'
 
 function MyApp({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(false)
@@ -15,8 +16,9 @@ function MyApp({ Component, pageProps }) {
   <Component {...pageProps} />
   <Aim/>
   <Projects/>
-  <OurTeam/>
+  <Team/>
   <Footer/>
+  
   </>
 }
 
