@@ -35,7 +35,7 @@ const FirstPage = () => {
         <section class="text-gray-600 body-font">
   <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
   <div class="rounded-lg h-64 overflow-hidden mb-10 ">
-        <video src='/intro.mp4' type="video/mp4" width="3200" height="2400" autoPlay controls/>
+        <video src='/intro.mp4' type="video/mp4" width="500" height="2400" autoPlay muted controls/>
       </div>
     <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
       <h1 class="title-font sm:text-4xl text-4xl font-thin mb-4  text-gray-900">WELCOME TO AIRS</h1>
