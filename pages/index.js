@@ -93,11 +93,11 @@ export default function Home() {
                     </h6>
                     <a
                      onClick={switchView}
-                      class="text-indigo-500 inline-flex items-center mt-2 mx-5"
+                      class="text-black bg-blue-300 p-2 rounded-md   inline-flex items-center mt-2 mx-2"
                     >
                       {text}
                       {
-                        <AiOutlineArrowDown className="mx-2"/>
+                        <AiOutlineArrowDown className="mx-1"/>
                       }
                       
                     </a>
@@ -140,7 +140,7 @@ export default function Home() {
                     </h6>
                     <a
                      onClick={switchView}
-                      class="text-indigo-500 inline-flex items-center mt-2 mx-5"
+                      class="text-black bg-blue-300 p-2 rounded-md   inline-flex items-center mt-2 mx-2"
                     >
                       {text}
                       {
