@@ -4,6 +4,8 @@ import { useState } from "react";
 import styles from "../styles/Home.module.css";
 import {AiOutlineArrowUp,AiOutlineArrowDown} from 'react-icons/ai'
 export default function Home() {
+  const [showLessOne , setShowLessOne] = useState(true)
+  const [textOne , setTextOne] = useState("Show More")
   const [showingless, setshowingless] = useState(true);
   const [text , setText] = useState("Show More")
   const switchView=()=>{
@@ -14,6 +16,16 @@ export default function Home() {
     if(showingless==false){
       setshowingless(true)
       setText("Show More")
+    }
+  }
+  const switchViewOne=()=>{
+    if(showLessOne==true){
+      setShowLessOne(false)
+      setTextOne("View Less")
+    }
+    if(showLessOne==false){
+      setShowLessOne(true)
+      setTextOne("View More")
     }
   }
   return (
@@ -38,6 +50,30 @@ export default function Home() {
                 ABOUT US
               </h2>
               <div className="bg-gray-200 rounded-lg p-4">
+              {showLessOne?(
+                <>
+                <p class="leading-relaxed mb-8  text-lg ">
+                  Innovation, Imagination and Application is the motto of this
+                  society. AIRS aims to teach and help students to understand
+                  the seemingly incomprehensible software development and
+                  electronic gadgets in the market today and also assists
+                  students in developing their own projects. We propose, like
+                  many top international universities as well as national
+                  universities, the “Society of AIRS” to meet this demand. . . . . . . .
+                  </p>
+                  <a
+                     onClick={switchViewOne}
+                      class="text-black bg-yellow-200 p-2 rounded-md   inline-flex items-center mt-2 mx-2"
+                    >
+                      {textOne}
+                      {
+                        <AiOutlineArrowDown className="mx-1"/>
+                      }
+                      
+                    </a>
+                </>
+              ):(
+                <>
                 <p class="leading-relaxed mb-8  text-lg ">
                   Innovation, Imagination and Application is the motto of this
                   society. AIRS aims to teach and help students to understand
@@ -53,6 +89,19 @@ export default function Home() {
                   best when it brings people together and make the world much
                   better.”
                 </p>
+                <a
+                     onClick={switchViewOne}
+                      class="text-black bg-yellow-200 p-2 rounded-md   inline-flex items-center mt-2 mx-2"
+                    >
+                      {textOne}
+                      {
+                        <AiOutlineArrowUp className="mx-1"/>
+                      }
+                      
+                    </a>
+                </>
+              )}
+                
               </div>
               <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
                 <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200"></span>
