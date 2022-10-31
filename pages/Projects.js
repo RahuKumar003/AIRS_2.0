@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import {AiOutlineArrowUp,AiOutlineArrowDown} from 'react-icons/ai'
 const data = [
   {
     img: "/projects/mcuBoard.jpg",
@@ -260,10 +261,12 @@ const Projects = () => {
         )}
       </div>
 
-      <a onClick={onLinkClick} class="text-indigo-500 inline-flex items-center mt-2 mx-5">{switchText}
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
+      <a onClick={onLinkClick} class="text-black inline-flex items-center mt-2 mx-5 bg-gray-200 p-2 rounded-lg">{switchText}
+        {showingLess?(
+          <><AiOutlineArrowDown className="mx-2"/></>
+        ):(
+          <><AiOutlineArrowUp className="mx-2"/></>
+        )}
       </a>
       
     </>
