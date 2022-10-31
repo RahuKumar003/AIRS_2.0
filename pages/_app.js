@@ -4,7 +4,6 @@ import Navbar from '../components/Navbar'
 import Aim from './Aim'
 import Projects from './Projects'
 import FirstPage from './FirstPage'
-import OurTeam from './OurTeam'
 import Footer from './Footer'
 import Team from './Team'
 
