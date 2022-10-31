@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
-
+import {AiOutlineArrowUp,AiOutlineArrowDown} from 'react-icons/ai'
 export default function Home() {
   const [showingless, setshowingless] = useState(true);
   const [text , setText] = useState("Show More")
@@ -96,17 +96,10 @@ export default function Home() {
                       class="text-indigo-500 inline-flex items-center mt-2 mx-5"
                     >
                       {text}
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                      </svg>
+                      {
+                        <AiOutlineArrowDown className="mx-2"/>
+                      }
+                      
                     </a>
                   </>
                 ) : (
@@ -150,17 +143,9 @@ export default function Home() {
                       class="text-indigo-500 inline-flex items-center mt-2 mx-5"
                     >
                       {text}
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        class="w-4 h-4 ml-2"
-                        viewBox="0 0 24 24"
-                      >
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                      </svg>
+                      {
+                        <AiOutlineArrowUp className="mx-2"/>
+                      }
                     </a>
                   </>
                 )}
