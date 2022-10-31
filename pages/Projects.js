@@ -200,10 +200,10 @@ const Projects = () => {
           <>
             <section class="text-gray-600 body-font mx-5" >
               <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-wrap -m-4">
+                <div class="flex flex-wrap -m-2">
                   {switchView.map((item, keys) => {
                     return (
-                      <div onClick={show} class="lg:w-1/5 md:w-1/3 lg:mx-5 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 bg-gray-200 rounded-lg">
+                      <div onClick={show} class="lg:w-1/5 md:w-1/3 lg:mx-8 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 bg-gray-200 rounded-lg">
                         <a class="block relative rounded overflow-hidden">
                           <img
                             alt="ecommerce"
@@ -261,7 +261,7 @@ const Projects = () => {
         )}
       </div>
 
-      <a onClick={onLinkClick} class="text-black inline-flex items-center mt-2 mx-5 bg-gray-200 p-2 rounded-lg">{switchText}
+      <a onClick={onLinkClick} class="text-white inline-flex items-center mt-2 mx-10 bg-red-500 p-4 rounded-lg">{switchText}
         {showingLess?(
           <><AiOutlineArrowDown className="mx-2"/></>
         ):(
