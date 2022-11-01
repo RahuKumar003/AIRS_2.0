@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import {AiOutlineArrowUp,AiOutlineArrowDown} from 'react-icons/ai'
 const data = [
   {
     img: "/projects/mcuBoard.jpg",
@@ -89,6 +90,37 @@ const data = [
   
 ];
 
+const secondarydata = [
+  {
+    img: "/projects/mcuBoard.jpg",
+    heading: "MCU BOARD",
+    p1: "Prototype for the MCU board is now been completed with the help of Atmega328P. It is having an on board motor controlling unit, LED segment, Buzzer as well as push button.",
+    p2: "It also has some of the important communication protocols like SPI, I2C, USART as well as ADC for communicating with the real world. In addition, there is one thing more that is power supply unit. It can be used in the control and automation field. It is being programmed by means of USB to TTL logic.",
+    backgroundColor: "bg-gray-200",
+  },
+  {
+    img: "/projects/radar.jpg",
+    heading: "RADAR",
+    p1: "A prototype for the Radar is been completed powered by processing 3.0.",
+    p2: "Now here radar can detect the objects and show their distance on simulation along with distance by means of HC-05 sensor. It can detect the presence of any object if its distance is less than 40 cm from the Radar. ",
+    backgroundColor: "bg-gradient-to-r from-green-50 to-green-300",
+  },
+  {
+    img: "/projects/meteorShower.jpg",
+    heading: " METEOR SHOWER GAME",
+    p1: "Prototype for meteor retro style game in which we have to save our ship from meteor",
+    p2: "The project we made is having following components in it as matrix led 8x8, push button, resistor and Arduino Nano microcontroller. ",
+    backgroundColor: "bg-gradient-to-r from-blue-100 via-blue-300 to-blue-300",
+  },
+  {
+    img: "/projects/tribotversion.jpg",
+    heading: "TRI-BOT Version 3.0",
+    p1: "Tri-bot version 3.0 has now been completed that can be accessible anywhere in the world using DTMF and GSM concept.",
+    p2: "It can decode the message by means of IC 8870 which is based on dual tone multiple frequency. In addition, the GSM module is already there in our mobile phones, which act as transmitter.",
+    backgroundColor: "bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100",
+  },
+]
+
 const desc =[
   {
     content:"The far reaching technical advancements and career options in the industry always need knowledgeable, technically sound, creative and amazingly quick problem solving skilled engineers. Therefore, focusing of this aspects we are trying everyday to make innovative projects in different domains. By this we aim to make transformation of Theoretical Knowledge into its applications.",
@@ -105,6 +137,9 @@ const desc =[
 ]
 const Projects = () => {
   const [showDetails, setShowDetails] = useState(true);
+  const [switchView , setSwitchView]  = useState(secondarydata)
+  const [switchText , setSwitchText] = useState("View More Projects")
+  const [showingLess , setShowingLess] = useState(true)
   const show = () => {
     if (showDetails == true) {
       setShowDetails(false);
@@ -113,6 +148,21 @@ const Projects = () => {
       setShowDetails(true);
     }
   };
+  const onLinkClick=(e)=>{
+    if(showingLess==true){
+      setSwitchView(data)
+      setSwitchText("View Less Projects")
+      setShowingLess(false)
+      e.preventDefault()
+    }
+    if(showingLess==false){
+      setSwitchView(secondarydata)
+      setSwitchText("View More Projects")
+      setShowingLess(true)
+      e.preventDefault()
+    }
+    
+  }
   return (
     <>
       <div class="container px-5 py-2 mx-auto bg-gradient-to-r from- to-blue-500">
@@ -148,12 +198,12 @@ const Projects = () => {
       <div>
         {showDetails ? (
           <>
-            <section class="text-gray-600 body-font mx-5" onClick={show}>
+            <section class="text-gray-600 body-font mx-5" >
               <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-wrap -m-4">
-                  {data.map((item, keys) => {
+                <div class="flex flex-wrap -m-2">
+                  {switchView.map((item, keys) => {
                     return (
-                      <div class="lg:w-1/5 md:w-1/3 lg:mx-5 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 bg-gray-200 rounded-lg">
+                      <div onClick={show} class="lg:w-1/5 md:w-1/3 lg:mx-8 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 bg-gray-200 rounded-lg">
                         <a class="block relative rounded overflow-hidden">
                           <img
                             alt="ecommerce"
@@ -184,7 +234,7 @@ const Projects = () => {
           <section class="text-gray-600 body-font mx-5" onClick={show}>
               <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-wrap -m-4">
-                  {data.map((item, keys) => {
+                  {switchView.map((item, keys) => {
                     return (
                       <div class={`lg:w-1/5 md:w-1/3 lg:mx-5 p-4 w-full cursor-pointer shadow-lg rounded-lg mx-8 mb-5 ${item.backgroundColor}`}  >
                         <a class="block relative rounded overflow-hidden">
@@ -210,6 +260,14 @@ const Projects = () => {
           </>
         )}
       </div>
+
+      <a onClick={onLinkClick} class="text-white inline-flex items-center mt-2 mx-10 bg-red-500 p-4 rounded-lg">{switchText}
+        {showingLess?(
+          <><AiOutlineArrowDown className="mx-2"/></>
+        ):(
+          <><AiOutlineArrowUp className="mx-2"/></>
+        )}
+      </a>
       
     </>
   );
