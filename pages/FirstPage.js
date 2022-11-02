@@ -85,7 +85,7 @@ const FirstPage = () => {
         <p class="text-white">Learn Python</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
-      <Image src="/java.png" height={60} width={80} />
+      <Image src="/javafinal.jpg" height={60} width={80} />
         <p class="text-white">Lear Java</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
