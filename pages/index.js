@@ -63,12 +63,13 @@ export default function Home() {
                   </p>
                   <a
                      onClick={switchViewOne}
-                      class="text-black bg-yellow-200 p-2 rounded-md   inline-flex items-center mt-2 mx-2"
+                      class="text-black bg-yellow-200 p-2 rounded-md   inline-flex items-center mt-2 mx-2 "
                     >
                       {textOne}
                       {
                         <AiOutlineArrowDown className="mx-1"/>
                       }
+                      <Image src="/airs.png" height={50} width={50} className="animate-spin"/>
                       
                     </a>
                 </>
@@ -96,7 +97,9 @@ export default function Home() {
                       {textOne}
                       {
                         <AiOutlineArrowUp className="mx-1"/>
+                        
                       }
+                      <Image src="/airs.png" height={50} width={50} className="animate-spin" />
                       
                     </a>
                 </>
@@ -148,7 +151,7 @@ export default function Home() {
                       {
                         <AiOutlineArrowDown className="mx-1"/>
                       }
-                      
+                      <Image src="/airs.png" height={50} width={50} className="animate-spin" />
                     </a>
                   </>
                 ) : (
@@ -195,6 +198,7 @@ export default function Home() {
                       {
                         <AiOutlineArrowUp className="mx-2"/>
                       }
+                      <Image src="/airs.png" height={50} width={50} className="animate-spin" />
                     </a>
                   </>
                 )}

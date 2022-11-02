@@ -1,62 +1,115 @@
-import React from 'react'
-import Image from 'next/image'
-import {BsFacebook} from 'react-icons/bs'
-import {FaInstagram} from 'react-icons/fa'
-import {toast , ToastContainer} from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css';
+import React from "react";
+import Image from "next/image";
+import {BsFacebook,BsTwitter,BsInstagram,BsLinkedin} from 'react-icons/bs'
+import { FaInstagram } from "react-icons/fa";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Link from "next/link";
 const FirstPage = () => {
-  const showToast=()=>{
-    toast.success("Welcome TO AIRS",{
-      toastId : "abx",
-      position : "bottom-left",
-      autoClose : 5000,
-      hideProgressBar : false,
-      closeOnClick : true,
-      pauseOnHover : true,
-      draggable : true,
-      progress : undefined
-    })
-  }
+  const showToast = () => {
+    toast.success("Welcome TO AIRS", {
+      toastId: "abx",
+      position: "bottom-left",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
 
-  showToast()
-  
+  showToast();
+
   return (
     <div>
-    <ToastContainer
-    position="bottom-left"
-    autoClose = {5000}
-    hideProgressBar = {false}
-    newestOnTop = {false}
-    closeOnClick
-    rtl = {false}
-    pauseOnFocusLoss
-    draggable
-    pauseOnHover/>
-        <section class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
-  <div class="rounded-lg h-64 overflow-hidden mb-10 ">
-        <video src='/intro.mp4' type="video/mp4" width="500" height="2400" autoPlay muted controls/>
+      <ToastContainer
+        position="bottom-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      <section class="text-gray-600 body-font bg-black ">
+        <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
+          <div class="rounded-lg h-60   ">
+            <h1 class="title-font sm:text-6xl text-4xl font-thin mb-4  text-white font-ubuntu capitalize">
+              welcome To
+            </h1>
+            <h1 class="title-font sm:text-6xl text-4xl mx-5 p-8  bg-blue-400 rounded-lg font-thin mb-4  text-white font-ubuntu capitalize">
+              artificial intelligence and robotics society
+            </h1>
+             
+          </div>
+          
+        </div>
+        
+      </section>
+
+      <section class="text-gray-600 body-font bg-black">
+  <div class="container px-5 py-10 mx-auto">
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <Image src="/python.jpg" height={60} width={100} />
+        <p class="text-white">Learn Python</p>
       </div>
-    <div class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center">
-      <h1 class="title-font sm:text-4xl text-4xl font-thin mb-4  text-gray-900">WELCOME TO AIRS</h1>
-      <p class="mb-8 font-thin text-lg">Artificial And Robotics Society</p>
-      
-      
-      <div class="flex justify-center">
-      <div className='flex right-0 top-2 object-center'>
-      <button class="flex top-2 right-0  text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-md text-lg">Join Us<BsFacebook className='mx-5 text-3xl'/></button>
+      <div class="p-4 sm:w-1/4 w-1/2">
+      <Image src="/java.png" height={60} width={80} />
+        <p class="text-white">Lear Java</p>
       </div>
-      <div className='flex right-0 top-2 object-center mx-5'>
-      <button class="flex top-2 right-0  text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded-md text-lg">Join Us<FaInstagram className='mx-5 text-3xl'/></button>
+      <div class="p-4 sm:w-1/4 w-1/2">
+      <Image src="/cfinal.jpg" height={70} width={70} />
+        <p class="text-white">Learn C</p>
       </div>
-      
-       
+      <div class="p-4 sm:w-1/4 w-1/2">
+      <Image src="/webfinal.jpg" height={60} width={70} />
+        <p class="text-white">Learn Web Dev</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <Image src="/androidfinal.jpg" height={60} width={120} />
+        <p class="text-white">Learn App Dev</p>
       </div>
     </div>
   </div>
 </section>
-    </div>
-  )
-}
+      
+      <div class="text-gray-600 body-font bg-black text-xl ">
+        <div class="container px-5 py-8  mx-auto flex items-center sm:flex-row flex-col">
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start p-2">
+            <Link href="https://www.facebook.com/profile.php?id=100086272766693">
+              <a>
+                <BsFacebook
+                  href=""
+                  className="mx-2 text-white cursor-pointer hover:text-blue-400"
+                />
+              </a>
+            </Link>
+            <Link href="https://www.instagram.com/airs.jh/">
+              <a>
+                <BsInstagram className="mx-2 text-white cursor-pointer  hover:text-blue-400" />
+              </a>
+            </Link>
+            <Link href="https://twitter.com/AIRSJH">
+              <a>
+                <BsTwitter className="mx-2 text-white cursor-pointer  hover:text-blue-400" />
+              </a>
+            </Link>
+            <Link href="https://www.linkedin.com/in/airsjh/">
+              <a>
+                <BsLinkedin className="mx-2 text-white cursor-pointer  hover:text-blue-400" />
+              </a>
+            </Link>
+          </span>
+        </div>
+      </div>
 
-export default FirstPage
+      
+    </div>
+  );
+};
+
+export default FirstPage;
