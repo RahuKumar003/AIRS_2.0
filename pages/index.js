@@ -131,7 +131,7 @@ export default function Home() {
                       set in this arena.
                       <ul className="mt-2">
                         <li className="mt-2">
-                          1- Aim at bringing out the "technological best" in
+                          1- Aim at bringing out the  best in
                           students
                         </li>
                         <li className="mt-2">
@@ -165,7 +165,7 @@ export default function Home() {
                       set in this arena.
                       <ul className="mt-2">
                         <li className="mt-2">
-                          1- Aim at bringing out the "technological best" in
+                          1- Aim at bringing out the technological best in
                           students
                         </li>
                         <li className="mt-2">
