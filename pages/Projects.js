@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import {AiOutlineArrowUp,AiOutlineArrowDown} from 'react-icons/ai'
+import Image from "next/image";
 const data = [
   {
     img: "/projects/mcuBoard.jpg",
@@ -263,9 +264,13 @@ const Projects = () => {
 
       <a onClick={onLinkClick} class="text-white inline-flex items-center mt-2 mx-10 bg-red-500 p-4 rounded-lg">{switchText}
         {showingLess?(
-          <><AiOutlineArrowDown className="mx-2"/></>
+          <><AiOutlineArrowDown className="mx-2 "/>
+          <Image src="/airs.png" height={50} width={50} className="animate-spin"/>
+          </>
         ):(
-          <><AiOutlineArrowUp className="mx-2"/></>
+          <><AiOutlineArrowUp className="mx-2"/>
+          <Image src="/airs.png" height={50} width={50} className="animate-spin"/>
+          </>
         )}
       </a>
       

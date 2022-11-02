@@ -68,6 +68,7 @@ const Aim = () => {
           
         </div>
       </div>
+      
     </section>
   );
 };
