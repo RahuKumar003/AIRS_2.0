@@ -14,15 +14,15 @@ const Footer = () => {
         <span class="ml-3 text-xl text-white font-thin">AIRS</span>
             
           </a>
-          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+          <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 ">
             © 2022 AIRS 
            
           </p>
           <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start p-2">
-            <Link href="https://www.facebook.com/profile.php?id=100086272766693"><a><BsFacebook href="" className="mx-2 text-white cursor-pointer"/></a></Link>
-            <Link href="https://www.instagram.com/airs.jh/"><a><BsInstagram className="mx-2 text-white cursor-pointer"/></a></Link>
-            <Link href="https://twitter.com/AIRSJH"><a><BsTwitter className="mx-2 text-white cursor-pointer"  /></a></Link>
-            <Link href="https://www.linkedin.com/in/airsjh/"><a><BsLinkedin className="mx-2 text-white cursor-pointer" /></a></Link>
+            <Link href="https://www.facebook.com/profile.php?id=100086272766693"><a><BsFacebook href="" className="mx-2 text-white cursor-pointer hover:text-blue-400"/></a></Link>
+            <Link href="https://www.instagram.com/airs.jh/"><a><BsInstagram className="mx-2 text-white cursor-pointer hover:text-blue-400"/></a></Link>
+            <Link href="https://twitter.com/AIRSJH"><a><BsTwitter className="mx-2 text-white cursor-pointer hover:text-blue-400 "  /></a></Link>
+            <Link href="https://www.linkedin.com/in/airsjh/"><a><BsLinkedin className="mx-2 text-white cursor-pointer hover:text-blue-400" /></a></Link>
           </span>
         </div>
       </footer>

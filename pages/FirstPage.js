@@ -5,15 +5,42 @@ import { FaInstagram } from "react-icons/fa";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Link from "next/link";
+const data = [
+  {
+    img:"/python.jpg",
+    heading : "Learn Python"
+  },
+  {
+    img:"/java.png",
+    heading : "Learn Java"
+  },
+  {
+    img:"/cfinal.jpg",
+    heading : "Learn C"
+  },
+  {
+    img:"/webfinal.jpg",
+    heading : "Learn Web Dev"
+  },
+  {
+    img:"/androidfinal.jpg",
+    heading : "Learn App Dev"
+  },
+  {
+    img:"/yoo.png",
+    heading : "Learn AI/ML"
+  }
+]
 const FirstPage = () => {
   const showToast = () => {
     toast.success("Welcome TO AIRS", {
       toastId: "abx",
+    
       position: "bottom-left",
-      autoClose: 5000,
+      autoClose: 4000,
       hideProgressBar: false,
       closeOnClick: true,
-      pauseOnHover: true,
+      pauseOnHover: false,
       draggable: true,
       progress: undefined,
     });
@@ -40,7 +67,7 @@ const FirstPage = () => {
             <h1 class="title-font sm:text-6xl text-4xl font-thin mb-4  text-white font-ubuntu capitalize">
               welcome To
             </h1>
-            <h1 class="title-font sm:text-6xl text-4xl mx-5 p-8  bg-blue-400 rounded-lg font-thin mb-4  text-white font-ubuntu capitalize">
+            <h1 class="title-font sm:text-6xl text-4xl mx-5 p-8 mt-10  bg-blue-400 rounded-lg font-thin mb-4  text-white font-ubuntu capitalize">
               artificial intelligence and robotics society
             </h1>
              
@@ -70,8 +97,12 @@ const FirstPage = () => {
         <p class="text-white">Learn Web Dev</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
-        <Image src="/androidfinal.jpg" height={60} width={120} />
+        <Image src="/androidfinal.jpg" height={80} width={150} />
         <p class="text-white">Learn App Dev</p>
+      </div>
+      <div class="p-4 sm:w-1/4 w-1/2">
+        <Image src="/yoo.png" height={80} width={80} />
+        <p class="text-white">Learn AI/ML</p>
       </div>
     </div>
   </div>
