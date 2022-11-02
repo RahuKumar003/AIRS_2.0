@@ -13,7 +13,7 @@ const Navbar = () => {
       <span class="ml-3 text-xl text-white font-thin">AIRS</span>
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center  ">
-      <Link href="/"><a class="mr-5 hover:text-yellow-400">HOME</a></Link>
+      <Link href="/"><a class="mr-5 hover:text-yellow-400 ">HOME</a></Link>
       <Link href="/Projects"><a class="mr-5 hover:text-yellow-400">PROJECTS</a></Link>
       <Link href="/team"><a class="mr-5 hover:text-yellow-400">OUR TEAM</a></Link>
       <Link href="/join"><a class="mr-5 hover:text-yellow-400">JOIN US</a></Link>
