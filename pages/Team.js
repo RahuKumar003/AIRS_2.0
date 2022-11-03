@@ -3,33 +3,33 @@ const data = [
   {
     name: "PROF M AFSAR ALAM",
     position: "HOD",
-    img: "http://www.jamiahamdard.ac.in/airs/img/team/afsar.jpg",
+    img: "/team/team-afsar.jpg"
   },
   {
     name: "PROF RANJIT BISWAS",
     position: "CHIEF ADVISOR",
-    img: "http://www.jamiahamdard.ac.in/airs/img/team/ranjit.jpg",
+    img: "/team/team-ranjit.jpg",
   },
   {
     name: "MD OMAIR AHMAD",
     position: "Assistant Professor",
-    img: "http://www.jamiahamdard.ac.in/airs/img/team/omair.jpg",
+    img: "/team/team-omair.jpg",
   },
   
   {
     name: "NAVED ALAM",
     position: "Assistant Professor",
-    img: "http://www.jamiahamdard.ac.in/airs/img/team/naved1.jpg",
+    img: "/team/team-naved1.jpg",
   },
   {
     name: "ADIL REHMAN",
     position: "President",
-    img: "http://www.jamiahamdard.ac.in/airs/img/team/adil.jpg",
+    img: "/team/team-adil.jpg",
   },
   {
     name: "SAURAV KUMAR",
     position: "Vice-President",
-    img: "http://www.jamiahamdard.ac.in/airs/img/team/saurav.jpg",
+    img: "/team/team-saurav.jpg",
   },
   
 ];
