@@ -5,27 +5,27 @@ import styles from "../styles/Home.module.css";
 import {AiOutlineArrowUp,AiOutlineArrowDown} from 'react-icons/ai'
 export default function Home() {
   const [showLessOne , setShowLessOne] = useState(true)
-  const [textOne , setTextOne] = useState("Show More")
+  const [textOne , setTextOne] = useState("Read More")
   const [showingless, setshowingless] = useState(true);
-  const [text , setText] = useState("Show More")
+  const [text , setText] = useState("Read More")
   const switchView=()=>{
     if(showingless==true){
       setshowingless(false)
-      setText("Show Less")
+      setText("Read Less")
     }
     if(showingless==false){
       setshowingless(true)
-      setText("Show More")
+      setText("Read More")
     }
   }
   const switchViewOne=()=>{
     if(showLessOne==true){
       setShowLessOne(false)
-      setTextOne("View Less")
+      setTextOne("Read Less")
     }
     if(showLessOne==false){
       setShowLessOne(true)
-      setTextOne("View More")
+      setTextOne("Read More")
     }
   }
   return (
@@ -59,7 +59,7 @@ export default function Home() {
                   electronic gadgets in the market today and also assists
                   students in developing their own projects. We propose, like
                   many top international universities as well as national
-                  universities, the “Society of AIRS” to meet this demand. . . . . . . .
+                  universities, the “Society of AIRS” to meet this demand . . . . . . . .
                   </p>
                   <a
                      onClick={switchViewOne}
@@ -138,8 +138,8 @@ export default function Home() {
                           2- The chief aim of the club is to bring the students
                           out of their rooms and to expose them to the
                           challenges awaiting them in the field of circuit
-                          designing, hardware analysis and programming . . . . .
-                          . . . . . .
+                          designing, hardware analysis and programming . . . . . . . .
+                          
                         </li>
                       </ul>
                     </h6>
