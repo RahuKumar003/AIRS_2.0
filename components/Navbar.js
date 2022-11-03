@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
-import Link from 'next/link'
+import { Link } from 'react-scroll'
 const Navbar = () => {
   return (
     <header class="text-white font-thin  body-font bg-black">
@@ -13,10 +13,10 @@ const Navbar = () => {
       <span class="ml-3 text-xl text-white font-thin">AIRS</span>
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center  ">
-      <Link href="/"><a class="mr-5 hover:text-yellow-400 text-lg ">HOME</a></Link>
-      <Link href="/Projects"><a class="mr-5 hover:text-yellow-400 text-lg">PROJECTS</a></Link>
-      <Link href="/team"><a class="mr-5 hover:text-yellow-400 text-lg">OUR TEAM</a></Link>
-      <Link href="/join"><a class="mr-5 hover:text-yellow-400 text-lg">JOIN US</a></Link>
+
+      <Link to="Projects" spy={true} smooth={true} offset={20} duration={1000} className="mx-4 cursor-pointer hover:text-yellow-400">OUR PROJECTS</Link>
+      <Link to="Team" spy={true} smooth={true} offset={20} duration={1000} className="mx-4 cursor-pointer hover:text-yellow-400">OUR TEAM</Link>
+      <Link to="JoinUs" spy={true} smooth={true} offset={20} duration={1000} className="mx-4 cursor-pointer hover:text-yellow-400">JOIN US</Link>
      
     </nav>
    

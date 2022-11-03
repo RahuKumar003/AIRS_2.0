@@ -9,7 +9,7 @@ const data = [
     heading: "MCU BOARD",
     p1: "Prototype for the MCU board is now been completed with the help of Atmega328P. It is having an on board motor controlling unit, LED segment, Buzzer as well as push button.",
     p2: "It also has some of the important communication protocols like SPI, I2C, USART as well as ADC for communicating with the real world. In addition, there is one thing more that is power supply unit. It can be used in the control and automation field. It is being programmed by means of USB to TTL logic.",
-    backgroundColor: "bg-gray-200",
+    backgroundColor: "bg-gradient-to-r from-blue-300 to-red-300",
   },
   {
     img: "/projects/radar.jpg",
@@ -44,21 +44,21 @@ const data = [
     heading: "BIDIRECTIONAL VISITOR COUNTER",
     p1: "Prototype for the visitor counter.",
     p2: "It can be implemented in our house to check how many person are there in the house and it can also be used for home automation. It consists of IR sensor, Atmega16 IC and LCD 16x2.",
-    backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
+    backgroundColor: "bg-gradient-to-r from-indigo-300 to-purple-400",
   },
   {
     img: "/projects/heartBeatDetector.jpg",
     heading: "HEART BEAT DETECTOR",
     p1: "It is used to provide heartbeat of the user. It also has a feature, which provides feedback to the user that whether he /she will having normal pulse, or not.",
     p2: "It can also send all its results to the smart phones as well as LCD 16x2. It consists of pulse sensor, multicolour LED and microcontroller.",
-    backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
+    backgroundColor: "bg-gradient-to-r from-green-200 to-green-400",
   },
   {
     img: "/projects/lpg_gas_leakage.jpg",
     heading: "LPG GAS LEAKAGE DETECTOR",
     p1: "In this project, we try to remove the problem of leakage of LPG that every home suffers. It is used to provide the real time data of flammable gases using MQ-2 sensor. ",
     p2: "Moreover, if the reading is above 2500 ppm then buzzer is on and led glows, which provides indicator to the user that it becomes dangerous here. It consists of MQ-2 sensor, LCD 16x2, Arduino Mega-2560 and multicolour LED.",
-    backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
+    backgroundColor: "bg-gray-200",
   },
   
   {
@@ -66,21 +66,21 @@ const data = [
     heading: "AIR QUALITY DETECTOR",
     p1: "In this project, we try to eliminate the problem of air pollution detection using MQ-135 sensor. ",
     p2: "We used the concept of ADC and try to get the input from the analog pins. If the reading is above 250 ppm then buzzer is on and LED glow. It is used in our house to detect the quality of air in nearby surrounding of it.",
-    backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
+    backgroundColor: "bg-gradient-to-r from-red-200 to-pink-400",
   },
   {
     img: "/projects/homeAutomationUsingUsart.jpg",
     heading: " HOME AUTOMATION USING USART",
     p1: "In this project, we used the concept of relay & universal synchronous asynchronous receiver transmitter . ",
     p2: "We used to reduce the problem of light consumption by means of creating the circuit wholly automatic. It is also used to control the light & fans by means of your smart phones.",
-    backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
+    backgroundColor: "bg-gradient-to-r from-purple-200  to-purple-500",
   },
   {
     img: "/projects/IRspectrumBot.jpg",
     heading: "IR SPECTRUM BOT ",
     p1: "The prototype for the IR spectrum Bot has been completed. It is a self-driving bot, which works on the sending and receiving of the signal just like in case of television.",
     p2:"It is been functioning perfectly across sharp turns and irregular paths that comes in its way.",
-    backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
+    backgroundColor: "bg-gradient-to-r from-gray-100 to-gray-300",
   },
   
 ];
@@ -91,7 +91,7 @@ const secondarydata = [
     heading: "MCU BOARD",
     p1: "Prototype for the MCU board is now been completed with the help of Atmega328P. It is having an on board motor controlling unit, LED segment, Buzzer as well as push button.",
     p2: "It also has some of the important communication protocols like SPI, I2C, USART as well as ADC for communicating with the real world. In addition, there is one thing more that is power supply unit. It can be used in the control and automation field. It is being programmed by means of USB to TTL logic.",
-    backgroundColor: "bg-gray-200",
+    backgroundColor: "bg-gradient-to-r from-blue-300 to-red-300",
   },
   {
     img: "/projects/radar.jpg",
@@ -135,32 +135,37 @@ const Projects = () => {
   const [switchView , setSwitchView]  = useState(secondarydata)
   const [switchText , setSwitchText] = useState("View More Projects")
   const [showingLess , setShowingLess] = useState(true)
-  const show = () => {
+  //const [descText , setDescText] = useState("Read Projects Description")
+  const show = (e) => {
     if (showDetails == true) {
       setShowDetails(false);
+      //setDescText("View Project")
     }
     if (showDetails == false) {
+      e.preventDefault()
       setShowDetails(true);
+      //setDescText("Read Projects Description")
     }
   };
   const onLinkClick=(e)=>{
     if(showingLess==true){
+      e.preventDefault()
       setSwitchView(data)
       setSwitchText("View Less Projects")
       setShowingLess(false)
-      e.preventDefault()
+      
     }
     if(showingLess==false){
+      e.preventDefault()
       setSwitchView(secondarydata)
       setSwitchText("View More Projects")
       setShowingLess(true)
-      e.preventDefault()
     }
     
   }
   return (
     <>
-      <div class="container px-5 py-2 mx-auto bg-gradient-to-r from- to-blue-500">
+      <div class="container px-5 py-2 mx-auto bg-gradient-to-r from- to-blue-500 " id="Projects">
         <div class="flex flex-wrap w-full mb-5">
           <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
             <h1 class=" sm:text-3xl text-2xl font-sans title-font mb-2 text-gray-900 mx-5 mt-10  ">
@@ -267,7 +272,23 @@ const Projects = () => {
           </>
         )}
       </a>
+
+      {/*<a onClick={show} class="text-white inline-flex items-center mt-2 mx-10 bg-red-500 p-4 rounded-lg cursor-pointer">{descText}
+        {showDetails?(
+          <>
+          <Image src="/airs.png" height={50} width={50} className="animate-spin"/>
+          </>
+        ):(
+          <>
+          <Image src="/airs.png" height={50} width={50} className="animate-spin"/>
+          </>
+        )}
+      </a>*/}
+
       
+    
+
+
     </>
   );
 };

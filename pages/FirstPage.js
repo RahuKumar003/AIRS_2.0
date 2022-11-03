@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import Image from "next/image";
 import {BsFacebook,BsTwitter,BsInstagram,BsLinkedin} from 'react-icons/bs'
 import { FaInstagram } from "react-icons/fa";
@@ -32,25 +32,27 @@ const data = [
   }
 ]
 const FirstPage = () => {
-  const showToast = () => {
-    toast.success("Welcome TO AIRS", {
-      toastId: "abx",
-    
-      position: "bottom-left",
-      autoClose: 4000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: false,
-      draggable: true,
-      progress: undefined,
-    });
-  };
-
-  showToast();
-
+  useEffect(() => {
+    const showToast = () => {
+      toast.success("Welcome TO AIRS", {
+        toastId: "abx",
+      
+        position: "bottom-left",
+        autoClose: 4000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: true,
+        progress: undefined,
+      });
+     
+    };
+    showToast()
+  }, [])
+  
   return (
-    <div>
-      <ToastContainer
+    <div >
+        <ToastContainer
         position="bottom-left"
         autoClose={5000}
         hideProgressBar={false}
@@ -61,6 +63,7 @@ const FirstPage = () => {
         draggable
         pauseOnHover
       />
+      
       <section class="text-gray-600 body-font bg-black ">
         <div class="container mx-auto flex flex-col px-5 py-24 justify-center items-center">
           <div class="rounded-lg h-60   ">
@@ -68,7 +71,7 @@ const FirstPage = () => {
               welcome To
             </h1>
             <h1 class="title-font sm:text-6xl text-4xl mx-5 p-8 mt-10  bg-blue-400 rounded-lg font-thin mb-4  text-white font-ubuntu capitalize">
-              artificial intelligence and robotics society
+              artificial intelligence and robotics society.
             </h1>
              
           </div>

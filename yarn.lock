@@ -2110,6 +2110,11 @@
   "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
   "version" "4.6.2"
 
+"lodash.throttle@^4.1.1":
+  "integrity" "sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ=="
+  "resolved" "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz"
+  "version" "4.1.1"
+
 "lodash.topath@^4.5.2":
   "integrity" "sha512-1/W4dM+35DwvE/iEd1M9ekewOSTlpFekhw9mhAtrwjVqUr83/ilQiyAvmg4tVX7Unkcfl1KC+i9WdaT4B6aQcg=="
   "resolved" "https://registry.npmjs.org/lodash.topath/-/lodash.topath-4.5.2.tgz"
@@ -2627,7 +2632,7 @@
   dependencies:
     "parse-ms" "^2.1.0"
 
-"prop-types@^15.5.8", "prop-types@^15.8.1":
+"prop-types@^15.5.8", "prop-types@^15.7.2", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -2686,7 +2691,7 @@
     "minimist" "^1.2.0"
     "strip-json-comments" "~2.0.1"
 
-"react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>=16", "react-dom@18.2.0":
+"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@>=16", "react-dom@18.2.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
@@ -2720,6 +2725,14 @@
     "prop-types" "^15.5.8"
     "react-easy-swipe" "^0.0.21"
 
+"react-scroll@^1.8.8":
+  "integrity" "sha512-RnU0wLaLozKIhLNAfoz6yxMus+PMypk7eBRfOitalYd2+qCiHrZdJ0MSDBs1Y23IFSfqSCdCEmENMJeSh0KoHA=="
+  "resolved" "https://registry.npmjs.org/react-scroll/-/react-scroll-1.8.8.tgz"
+  "version" "1.8.8"
+  dependencies:
+    "lodash.throttle" "^4.1.1"
+    "prop-types" "^15.7.2"
+
 "react-toastify@^9.1.0":
   "integrity" "sha512-pkFCla1z3ve045qvjEmn2xOJOy4ZciwRXm1oMPULVkELi5aJdHCN/FHnuqXq8IwGDLB7PPk2/J6uP9D8ejuiRw=="
   "resolved" "https://registry.npmjs.org/react-toastify/-/react-toastify-9.1.1.tgz"
@@ -2727,7 +2740,7 @@
   dependencies:
     "clsx" "^1.1.1"
 
-"react@*", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@18.2.0":
+"react@*", "react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
