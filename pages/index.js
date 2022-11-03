@@ -63,11 +63,11 @@ export default function Home() {
                   </p>
                   <a
                      onClick={switchViewOne}
-                      class="text-black bg-yellow-200 p-2 rounded-md   inline-flex items-center mt-2 mx-2 "
+                      class="text-black bg-yellow-200 p-2 rounded-md   inline-flex items-center mt-2 mx-2 cursor-pointer "
                     >
                       {textOne}
                       {
-                        <AiOutlineArrowDown className="mx-1"/>
+                        <AiOutlineArrowDown className="mx-1 "/>
                       }
                       <Image src="/airs.png" height={50} width={50} className="animate-spin"/>
                       
@@ -92,11 +92,11 @@ export default function Home() {
                 </p>
                 <a
                      onClick={switchViewOne}
-                      class="text-black bg-yellow-200 p-2 rounded-md   inline-flex items-center mt-2 mx-2"
+                      class="text-black bg-yellow-200 p-2 rounded-md   inline-flex items-center mt-2 mx-2 cursor-pointer"
                     >
                       {textOne}
                       {
-                        <AiOutlineArrowUp className="mx-1"/>
+                        <AiOutlineArrowUp className="mx-1 "/>
                         
                       }
                       <Image src="/airs.png" height={50} width={50} className="animate-spin" />
@@ -131,7 +131,7 @@ export default function Home() {
                       set in this arena.
                       <ul className="mt-2">
                         <li className="mt-2">
-                          1- Aim at bringing out the "technological best" in
+                          1- Aim at bringing out the  best in
                           students
                         </li>
                         <li className="mt-2">
@@ -145,11 +145,11 @@ export default function Home() {
                     </h6>
                     <a
                      onClick={switchView}
-                      class="text-black bg-blue-300 p-2 rounded-md   inline-flex items-center mt-2 mx-2"
+                      class="text-black bg-blue-300 p-2 rounded-md   inline-flex items-center mt-2 mx-2  cursor-pointer"
                     >
                       {text}
                       {
-                        <AiOutlineArrowDown className="mx-1"/>
+                        <AiOutlineArrowDown className="mx-1 "/>
                       }
                       <Image src="/airs.png" height={50} width={50} className="animate-spin" />
                     </a>
@@ -165,7 +165,7 @@ export default function Home() {
                       set in this arena.
                       <ul className="mt-2">
                         <li className="mt-2">
-                          1- Aim at bringing out the "technological best" in
+                          1- Aim at bringing out the technological best in
                           students
                         </li>
                         <li className="mt-2">
@@ -192,11 +192,11 @@ export default function Home() {
                     </h6>
                     <a
                      onClick={switchView}
-                      class="text-black bg-blue-300 p-2 rounded-md   inline-flex items-center mt-2 mx-2"
+                      class="text-black bg-blue-300 p-2 rounded-md   inline-flex items-center mt-2 mx-2 cursor-pointer"
                     >
                       {text}
                       {
-                        <AiOutlineArrowUp className="mx-2"/>
+                        <AiOutlineArrowUp className="mx-2 "/>
                       }
                       <Image src="/airs.png" height={50} width={50} className="animate-spin" />
                     </a>

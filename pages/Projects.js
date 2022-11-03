@@ -33,56 +33,50 @@ const data = [
     backgroundColor: "bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100",
   },
   {
-    img: "/projects/tribotversion.jpg",
+    img: "/projects/smartDustbin.jpg",
     heading: "SMART DUSTBIN",
     p1: "Prototype for the smart dustbin.",
     p2: "It has feature of automatic opening and closing of lid whenever an individual comes in contact with it at distance of 30 cm and also provide an indicator if our dustbin becomes full. It is based on SONAR system .",
     backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
   },
   {
-    img: "/projects/tribotversion.jpg",
+    img: "/projects/bidirectionalVisitorCounter.jpg",
     heading: "BIDIRECTIONAL VISITOR COUNTER",
     p1: "Prototype for the visitor counter.",
     p2: "It can be implemented in our house to check how many person are there in the house and it can also be used for home automation. It consists of IR sensor, Atmega16 IC and LCD 16x2.",
     backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
   },
   {
-    img: "/projects/tribotversion.jpg",
+    img: "/projects/heartBeatDetector.jpg",
     heading: "HEART BEAT DETECTOR",
     p1: "It is used to provide heartbeat of the user. It also has a feature, which provides feedback to the user that whether he /she will having normal pulse, or not.",
     p2: "It can also send all its results to the smart phones as well as LCD 16x2. It consists of pulse sensor, multicolour LED and microcontroller.",
     backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
   },
   {
-    img: "/projects/tribotversion.jpg",
+    img: "/projects/lpg_gas_leakage.jpg",
     heading: "LPG GAS LEAKAGE DETECTOR",
     p1: "In this project, we try to remove the problem of leakage of LPG that every home suffers. It is used to provide the real time data of flammable gases using MQ-2 sensor. ",
     p2: "Moreover, if the reading is above 2500 ppm then buzzer is on and led glows, which provides indicator to the user that it becomes dangerous here. It consists of MQ-2 sensor, LCD 16x2, Arduino Mega-2560 and multicolour LED.",
     backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
   },
+  
   {
-    img: "/projects/tribotversion.jpg",
-    heading: "LPG GAS LEAKAGE DETECTOR",
-    p1: "In this project, we try to remove the problem of leakage of LPG that every home suffers. It is used to provide the real time data of flammable gases using MQ-2 sensor. ",
-    p2: "Moreover, if the reading is above 2500 ppm then buzzer is on and led glows, which provides indicator to the user that it becomes dangerous here. It consists of MQ-2 sensor, LCD 16x2, Arduino Mega-2560 and multicolour LED.",
-    backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
-  },
-  {
-    img: "/projects/tribotversion.jpg",
+    img: "/projects/airQualityDetector.jpg",
     heading: "AIR QUALITY DETECTOR",
     p1: "In this project, we try to eliminate the problem of air pollution detection using MQ-135 sensor. ",
     p2: "We used the concept of ADC and try to get the input from the analog pins. If the reading is above 250 ppm then buzzer is on and LED glow. It is used in our house to detect the quality of air in nearby surrounding of it.",
     backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
   },
   {
-    img: "/projects/tribotversion.jpg",
+    img: "/projects/homeAutomationUsingUsart.jpg",
     heading: " HOME AUTOMATION USING USART",
     p1: "In this project, we used the concept of relay & universal synchronous asynchronous receiver transmitter . ",
     p2: "We used to reduce the problem of light consumption by means of creating the circuit wholly automatic. It is also used to control the light & fans by means of your smart phones.",
     backgroundColor: "bg-gradient-to-r from-red-200 to-red-400",
   },
   {
-    img: "/projects/tribotversion.jpg",
+    img: "/projects/IRspectrumBot.jpg",
     heading: "IR SPECTRUM BOT ",
     p1: "The prototype for the IR spectrum Bot has been completed. It is a self-driving bot, which works on the sending and receiving of the signal just like in case of television.",
     p2:"It is been functioning perfectly across sharp turns and irregular paths that comes in its way.",
@@ -204,7 +198,7 @@ const Projects = () => {
                 <div class="flex flex-wrap -m-2">
                   {switchView.map((item, keys) => {
                     return (
-                      <div onClick={show} class="lg:w-1/5 md:w-1/3 lg:mx-8 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 bg-gray-200 rounded-lg">
+                      <div onClick={show} key={keys} class="lg:w-1/5 md:w-1/3 lg:mx-8 p-4 w-full cursor-pointer shadow-lg mx-8 mb-5 bg-gray-200 rounded-lg">
                         <a class="block relative rounded overflow-hidden">
                           <img
                             alt="ecommerce"
@@ -237,7 +231,7 @@ const Projects = () => {
                 <div class="flex flex-wrap -m-4">
                   {switchView.map((item, keys) => {
                     return (
-                      <div class={`lg:w-1/5 md:w-1/3 lg:mx-5 p-4 w-full cursor-pointer shadow-lg rounded-lg mx-8 mb-5 ${item.backgroundColor}`}  >
+                      <div key={keys} class={`lg:w-1/5 md:w-1/3 lg:mx-5 p-4 w-full cursor-pointer shadow-lg rounded-lg mx-8 mb-5 ${item.backgroundColor}`}  >
                         <a class="block relative rounded overflow-hidden">
                           
                         </a>
@@ -248,7 +242,7 @@ const Projects = () => {
                           <h2 class="text-gray-900 title-font text-lg font-sans mt-2">
                             {item.heading}
                           </h2>
-                          <h2 class="text-gray-900 title-font text-lg mt-4 font-sans">
+                          <h2 class="text-gray-900 title-font text-lg mt-4 font-sans text-left">
                             {item.p2}
                           </h2>
                         </div>
@@ -262,13 +256,13 @@ const Projects = () => {
         )}
       </div>
 
-      <a onClick={onLinkClick} class="text-white inline-flex items-center mt-2 mx-10 bg-red-500 p-4 rounded-lg">{switchText}
+      <a onClick={onLinkClick} class="text-white inline-flex items-center mt-2 mx-10 bg-red-500 p-4 rounded-lg cursor-pointer">{switchText}
         {showingLess?(
           <><AiOutlineArrowDown className="mx-2 "/>
           <Image src="/airs.png" height={50} width={50} className="animate-spin"/>
           </>
         ):(
-          <><AiOutlineArrowUp className="mx-2"/>
+          <><AiOutlineArrowUp className="mx-2 cursor-pointer"/>
           <Image src="/airs.png" height={50} width={50} className="animate-spin"/>
           </>
         )}
