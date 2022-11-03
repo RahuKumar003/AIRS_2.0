@@ -14,7 +14,7 @@ const Navbar = () => {
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center  ">
 
-      <Link to="Projects" spy={true} smooth={true} offset={20} duration={1000} className="mx-4 cursor-pointer hover:text-yellow-400">OUR PROJECTS</Link>
+      <Link to="Projects" spy={true} smooth={true} offset={20} duration={1000} className="mx-4 cursor-pointer hover:text-yellow-400">PROJECTS</Link>
       <Link to="Team" spy={true} smooth={true} offset={20} duration={1000} className="mx-4 cursor-pointer hover:text-yellow-400">OUR TEAM</Link>
       <Link to="JoinUs" spy={true} smooth={true} offset={20} duration={1000} className="mx-4 cursor-pointer hover:text-yellow-400">JOIN US</Link>
      
